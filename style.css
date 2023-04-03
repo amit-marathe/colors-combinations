@@ -178,7 +178,6 @@ html,body{
      text-transform: uppercase;
 }
 
-
 #ft-boxes #btm-boxes{
     height: 25%;
     width: 150%;
@@ -1015,11 +1014,11 @@ html,body{
     top: 50%;
     transform: translate(-50%,-50%);
     padding: 4px;
+    opacity: 0;
 }
 
 #overlay #back-img img{
     scale: .7;
-    display: none;
 } 
 /* ================================================home-page-ends========================================*/
 
@@ -1678,7 +1677,7 @@ html,body{
 
 /* ============================================= sec0-page-end============================================= */
 
-/* ============================================= sec1-page-start============================================= */
+/* ============================================= last0-page-start============================================= */
 #last0{
     height: 100vh;
     width: 100%;
@@ -1822,4 +1821,494 @@ html,body{
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+/* ============================================= last0-page-end============================================= */
+
+/* ============================================= last-page-start============================================= */
+#last{
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+    position: relative;
+}
+
+#last #last-tnav{
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#last #last-tnav img:first-child{
+    width: 150px;
+}
+
+#last #last-tnav img:last-child{
+    width: 100px;
+}
+
+#last #last-bnav{
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#last #last-bnav img{
+    width: 100px;
+}
+
+#last #last-center{
+    height: 15vh;
+    width: 15vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: hide 2s linear infinite;
+}
+
+#last-center img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@keyframes hide{
+    0%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ============================================= last-page-end============================================= */
+
+/* //=============================================media-querry============================================= //*/
+
+
+@media only screen and (max-width:480px) and (min-width:320px){
+    #main{
+        width: 100%;
+        overflow: hidden;
+    }
+/* ======================================first-page-starts=============================================== */
+    #first #f-top{
+        height: 100%;
+        width: 100%;
+    }
+
+    #first #f-top>h1{
+        font-size: 6rem;
+        padding: 20px 0;
+    }
+
+    #f-top #ft-boxes{
+        top: 50%;
+    }
+
+    .t-boxes:first-child{
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 20px 0 20px;
+    }
+
+    .t-boxes:nth-child(2){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(3){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(4){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(5){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(6){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(7){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:nth-child(8){
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes:last-child{
+        height: 55%;
+        width: 40%;
+        border-radius: 5px;
+        padding: 10px 10px 0 20px;
+    }
+
+    .t-boxes h1,h2{
+        font-size: .9rem;
+    }
+
+    #mid-boxes .m-boxes{
+        height: 60%;
+        width: 40%;
+        padding: 20px 20px 0 20px;
+        line-height: 1.6rem;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+    
+    #mid-boxes .m-boxes h1{
+         font-size: 1.5rem;
+         white-space: nowrap;
+    }
+
+    #mid-boxes .m-boxes h2{
+        white-space: nowrap;
+    }
+
+    #ft-boxes #btm-boxes{
+        bottom: 25%;
+    }
+
+    #f-top #first-img{
+        height: 100vw;
+        width: 100vw;
+        bottom: -18%;
+    }
+
+    #first #f-cir{
+        display: none;
+    }
+/* ======================================first-page-ends=============================================== */
+
+/* ======================================home0-page-start=============================================== */
+    #home0{
+        width: 100%;
+        height: 140vh;
+        overflow: hidden;
+    }
+
+    #home0 #h0-top{
+        height: 30vh;
+    }
+
+    #home0 #h0-top>h1{
+        font-size: 3.5rem;
+        padding: 7rem 10px;
+    }
+
+    #h0-top #h0t-nav,
+    #home0 #h0b-nav{
+        z-index: -1;
+    }
+
+    #home0 #h0-btm{
+        height: 60vh;
+        top: 45%;
+    }
+
+    #h0-btm .no>h1{
+        font-size: 3rem;
+        padding: 10px 20px;
+    }
+
+    #h0-btm .f-text{
+        display: none;
+    }
+
+    #h0-btm .s-text{
+        margin: 15px 0 0 40px;
+        position: relative;
+    }
+
+    #h0-btm .s-text h1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+    }
+
+    #h0-btm .s-text h2{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        letter-spacing: 1px;
+    }
+
+    #h0-btm .two-cir{
+        right: 45%;
+        top: -15%;
+    }
+
+    #h0-btm .two-cir .one, 
+    #h0-btm .two-cir .two{
+        height: 30px;
+        width: 30px;
+    }
+
+    @keyframes mymove{
+        0% {
+            margin-left: 10px;
+        }
+    }
+    
+    @keyframes move{
+        0% {
+            margin-right: 10px;
+        }   
+    }
+
+    #home0 #h0-circle{
+        height: 40vh;
+        bottom: 5%;
+    }
+
+    #h0-circle .cir-img{
+        height: 96%;   
+        width: 80%;
+        background-image: url(./img/f-circle.webp);
+        background-position: center;
+        background-size: cover;
+    }
+/* ======================================home0-page-ends=============================================== */
+
+/* ======================================home1-page-start=============================================== */
+    #home1{
+        width: 100%;
+        height: 170vh;
+    }
+
+    #home1 #h1-top{
+        width: 100%;
+        height: 70vh;
+        padding: 30px 0;
+    }
+
+    #home1 #h1-top>h1{
+        font-size: 5rem;
+        line-height: 6rem;
+        position: absolute;
+        left: -12%;
+    }
+
+    #h1-top .h1t-text{
+        height: 60%;
+        width: 50%;
+        left: 30%;
+    }
+
+    #home1 #h1-mid{
+        height: 100vh;
+    }
+
+    #h1-mid .no>h1{
+        font-size: 3rem;
+        padding: 30px 20px;
+    }
+
+    #h1-mid .f-text{
+        display: none;
+    }
+
+    #h1-mid .s-text{
+        margin: 15px 0 0 10px;
+        position: relative;
+    }
+
+    #h1-mid .s-text h1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2rem;
+        padding-top: 20px;
+        width: 250%;
+    }
+
+    #h1-mid .s-text h2{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 10%;
+        left: 0;
+        letter-spacing: 1px;
+        padding-top: 10px;
+        width: 250%;
+    }
+
+    #h1-mid .two-cir{
+        right: 40%;
+        top: -5%;
+    }
+
+    #h1-mid .two-cir .one, 
+    #h1-mid .two-cir .two{
+        height: 30px;
+        width: 30px;
+    }
+
+    @keyframes mymove{
+        0% {
+            margin-left: 10px;
+        }
+    }
+    
+    @keyframes move{
+        0% {
+            margin-right: 10px;
+        }   
+    }
+/* ======================================home1-page-ends=============================================== */
+
+/* ======================================home2-page-start=============================================== */
+#home2{
+    height: 100vh;
+    width: 500%;
+    background: linear-gradient(90deg,
+    #d5a7b4 0%,
+    #105099 20%,
+    #9e9e4d 40%,
+    #f8955b 60%,
+    #c54126 80%,
+    #f4bf3c 100%
+); 
+}
+
+#home2 #overlay-h2{
+    display: none;
+}
+
+#h2-btm #lines{
+    height: 30%;
+    border-top: 1.5px solid #fff;
+    border-bottom: 1.5px solid #fff;
+}
+
+#h2-btm #lines #h2-tl img{
+    width: 150px;
+}
+
+#h2-btm #lines #h2-bl img{
+    width: 200px;
+}
+
+#h2-btm #h2-boxes{
+    height: 30vh;
+    width: 100%;
+}
+
+#h2-btm #h2-boxes .h2-box{
+    height: 30%;
+    border-radius: 5px;
+    width: 2.4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#h2-btm #h2-boxes .h2-box h1{
+    font-size: 3rem;
+}
+/* ======================================home2-page-ends=============================================== */
+
+/* ======================================home-page-starts=============================================== */
+/* #home{
+    
+} */
+
+
+/* ======================================home-page-ends=============================================== */
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+    #home1 #h1t-nav{
+        filter: invert();
+        z-index: 9999;
+        padding: 0 10px;
+    }
+
+    #home1 #h1b-nav{
+        filter: invert();
+        z-index: 9999;
+        padding: 0 0;
+    }
+
+    #home1 #h1t-nav img:first-child{
+        width: 100px;
+    }
+    
+    #home1 #h1t-nav img:last-child{
+        width: 80px;
+    }
+
+    #home1 #h1b-nav img{
+        width: 80px;
+    }
+
+    #home2 #h2t-nav, #home2 #h2b-nav{
+        display: none;
+    }
+
+    #home #overlay #top-nav{
+        display: none;
+    }
+
+    #home #overlay #btm-nav{
+        display: none;
+    }
+
 }
